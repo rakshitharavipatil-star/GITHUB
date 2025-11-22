@@ -1,0 +1,15 @@
+/* Shared site styles (navbar + header only) */
+:root{--nav-bg:#ffffff;--nav-border:rgba(15,23,42,0.04);--brand:#0b6ff0;--nav-link:#0b6ff0;--nav-text:#0f172a}
+*{box-sizing:border-box}
+.site-header{background:var(--nav-bg);border-bottom:1px solid var(--nav-border)}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.site-brand{font-weight:700;font-size:18px;color:var(--brand);text-decoration:none}
+.site-nav{display:flex;gap:8px;align-items:center}
+.site-nav a{color:var(--nav-link);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
+.site-nav a:hover{background:rgba(11,111,240,0.08)}
+.site-nav a.active{background:var(--nav-link);color:#fff}
+@media (max-width:719px){
+  .header-inner{flex-direction:column;align-items:stretch}
+  .site-nav{justify-content:center;flex-wrap:wrap;margin-top:8px}
+}
